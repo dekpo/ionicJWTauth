@@ -20,6 +20,7 @@ export class AuthService {
     private storage: Storage,
     private alertController: AlertController) {
       this.storage.create();
+      this.checkToken();
     }
 
     url = environment.url;
